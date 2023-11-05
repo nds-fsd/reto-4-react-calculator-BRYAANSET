@@ -11,6 +11,7 @@ body{
 .calcontainer{
     padding: 20px;
     width: 600px;
+    height: 460px;
     margin: auto;
     margin-top: 100px;
     background-color: #222222;
@@ -32,7 +33,6 @@ body{
 
 .buttons {
     width: 560px;
-    border: 1px solid orange;
     border-radius: 10px;
     height: 420px;
     margin-left: 3%;
@@ -41,11 +41,21 @@ body{
 }
 
 .operators {
-    width: 540px;
-    border: 1px solid orange;
+    width: 560px;
     border-radius: 10px;
     height: 60px;
+}
+
+.operatbuttons {
+    background-color: #9575DE;
+    color: #FFFFFF;
+    display: inline-block;
+    border-radius: 10px;
+    width: 120px;
     padding: 10px;
+    text-align: center;
+    margin: 12px 10px 0px 10px;
+    cursor: pointer;
 }
 
 .lowerbuttons {
@@ -54,17 +64,43 @@ body{
     height: 340px;
 }
 .operands {
-    width: 420px;
-    border: 1px solid orange;
+    width: 410px;
     border-radius: 10px;
     height: 315px;
+    display: grid;
+    margin-left: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.numbuttons {
+    background-color: #6554AF;
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
     padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
 }
 
 .equalbutton {
-    border: 1px solid orange;
     border-radius: 10px;
-    width: 90px;
-    height: 335px;
+    width: 118px;
+    height: 315px;
     margin-left: 10px;
+}
+
+.equalbttn{
+    background-color: #FF60F8;
+    color: #FFFFFF;
+    display: inline-block;
+    border-radius: 10px;
+    width: 118px;
+    height: 298px;
+    text-align: center;
+    /* padding: 99px 10px; */
+    margin: 10px 6px 10px 0;
+    vertical-align: top;
+    cursor: pointer;
 }
